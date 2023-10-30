@@ -1,6 +1,7 @@
 package com.example.marvelapp.framework.network
 
 import com.example.marvelapp.framework.network.response.DataWrapperResponse
+import dagger.Provides
 import retrofit2.http.GET
 import retrofit2.http.QueryMap
 
