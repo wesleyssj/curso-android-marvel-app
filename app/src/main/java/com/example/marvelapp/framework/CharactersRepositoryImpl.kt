@@ -1,9 +1,9 @@
 package com.example.marvelapp.framework
 
 import androidx.paging.PagingSource
-import com.chesley.core.data.repository.CharactersRemoteDataSource
-import com.chesley.core.data.repository.CharactersRepository
-import com.chesley.core.domain.model.Character
+import com.example.core.data.repository.CharactersRemoteDataSource
+import com.example.core.data.repository.CharactersRepository
+import com.example.core.domain.model.Character
 import com.example.marvelapp.framework.network.response.DataWrapperResponse
 import com.example.marvelapp.framework.paging.CharactersPagingSource
 import javax.inject.Inject

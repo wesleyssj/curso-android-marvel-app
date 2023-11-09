@@ -1,7 +1,7 @@
 package com.example.marvelapp.framework.di
 
-import com.chesley.core.data.repository.CharactersRemoteDataSource
-import com.chesley.core.data.repository.CharactersRepository
+import com.example.core.data.repository.CharactersRemoteDataSource
+import com.example.core.data.repository.CharactersRepository
 import com.example.marvelapp.framework.CharactersRepositoryImpl
 import com.example.marvelapp.framework.network.response.DataWrapperResponse
 import com.example.marvelapp.framework.remote.RetrofitCharactersDataSource

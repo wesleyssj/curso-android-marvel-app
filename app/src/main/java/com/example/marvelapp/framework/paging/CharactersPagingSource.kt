@@ -2,8 +2,8 @@ package com.example.marvelapp.framework.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.chesley.core.data.repository.CharactersRemoteDataSource
-import com.chesley.core.domain.model.Character
+import com.example.core.data.repository.CharactersRemoteDataSource
+import com.example.core.domain.model.Character
 import com.example.marvelapp.framework.network.response.DataWrapperResponse
 import com.example.marvelapp.framework.network.response.toCharacterModel
 

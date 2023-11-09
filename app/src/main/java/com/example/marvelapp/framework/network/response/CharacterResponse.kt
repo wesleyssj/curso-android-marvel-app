@@ -1,6 +1,6 @@
 package com.example.marvelapp.framework.network.response
 
-import com.chesley.core.domain.model.Character
+import com.example.core.domain.model.Character
 
 data class CharacterResponse(
     val id: String,
