@@ -37,6 +37,7 @@ android {
         buildConfigField "String", "BASE_URL", '"https://gateway.marvel.com/v1/public/"'
     }
 
+
     buildTypes {
         debug {
             applicationIdSuffix '.debug'
