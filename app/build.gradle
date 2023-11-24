@@ -11,6 +11,11 @@ apply from: '../config/detekt/detekt.gradle'
 
 def apikeyPropertiesFile = rootProject.file("apikey.properties")
 def apikeyProperties = new Properties()
+
+
+
+
+
 apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
 
 android {
