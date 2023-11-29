@@ -23,7 +23,6 @@ android {
             keyPassword '...'
         }
     }
-
     compileSdkVersion 33
 
     defaultConfig {
