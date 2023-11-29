@@ -23,7 +23,7 @@ android {
             keyPassword '...'
         }
     }
-    compileSdk 33
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "com.example.marvelapp"
