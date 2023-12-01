@@ -24,6 +24,7 @@ import java.lang.RuntimeException
 @RunWith(MockitoJUnitRunner::class)
 class CharactersViewModelTest {
 
+    @ExperimentalCoroutinesApi
     @get:Rule
     var mainCoroutineRule = MainCoroutineRule()
 
@@ -41,6 +42,7 @@ class CharactersViewModelTest {
         )
     )
 
+    @ExperimentalCoroutinesApi
     @Before
     fun setUp() {
         charactersViewModel = CharactersViewModel(getCharactersUseCase)
@@ -50,7 +52,8 @@ class CharactersViewModelTest {
     @Test
     fun `should validate the paging data object values when calling charactersPagingData`() =
         runBlockingTest {
-            whenever(getCharactersUseCase.invoke(any())
+            whenever(
+                getCharactersUseCase.invoke(any())
             ).thenReturn(
                 flowOf(
                     pagingDataCharacters
@@ -60,11 +63,10 @@ class CharactersViewModelTest {
             val result = charactersViewModel.charactersPagingData("")
 
             assertEquals(1, result.count())
-
         }
 
     @ExperimentalCoroutinesApi
-    @Test
+    @Test(expected = RuntimeException::class)
     fun `should throw an exception when the calling to the use case returns an exception`() =
         runBlockingTest {
             whenever(getCharactersUseCase.invoke(any()))
