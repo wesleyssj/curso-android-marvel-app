@@ -27,7 +27,6 @@ class GetCharactersUseCaseImplTest {
 
     @Mock
     lateinit var repository: CharactersRepository
-
     private lateinit var getCharactersUseCase: GetCharactersUseCase
 
     private val hero = CharacterFactory().create(CharacterFactory.Hero.ThreeDMan)
